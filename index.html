@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RotiKoe Bakery - Kehangatan Roti Segar Setiap Hari</title>
+  
+  <!-- Google Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome untuk Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- File CSS Eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAVIGASI ================= -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#beranda" class="logo">
+        <i class="fa-solid fa-bread-slice logo-icon"></i>
+        <span>Roti<span>Koe</span></span>
+      </a>
+
+      <!-- Menu Navigasi Utama -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#keunggulan" class="nav-link">Keunggulan</a></li>
+          <li><a href="#menu" class="nav-link">Menu Roti</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Tombol Aksi di Header -->
+      <div class="nav-actions">
+        <!-- Tombol Buka Keranjang -->
+        <button class="cart-btn" id="openCartBtn" aria-label="Lihat Keranjang">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartBadge">0</span>
+        </button>
+
+        <!-- Tombol Menu Mobile (Hamburger) -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="beranda">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="badge">
+            <i class="fa-solid fa-star"></i> 100% Halal & Tanpa Pengawet
+          </span>
+          <h1 class="hero-title">
+            Nikmati Kehangatan <span>Roti Segar</span> Buatan Rumah Setiap Pagi
+          </h1>
+          <p class="hero-desc">
+            Dipanggang setiap subuh dengan ragi alami dan mentega pilihan. Tekstur super lembut dengan rasa manis gurih yang bikin rindu.
+          </p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">
+              <i class="fa-solid fa-utensils"></i> Pilih Roti Favorit
+            </a>
+            <a href="#tentang" class="btn btn-outline">
+              Cerita Kami
+            </a>
+          </div>
+
+          <!-- Mini Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>15+</strong>
+              <span>Varian Roti</span>
+            </div>
+            <div class="stat-item">
+              <strong>5.000+</strong>
+              <span>Pelanggan Puas</span>
+            </div>
+            <div class="stat-item">
+              <strong>4.9 / 5</strong>
+              <span>Rating Rasa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" 
+               alt="Roti Manis Segar RotiKoe" 
+               class="hero-img">
+          <div class="floating-badge">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <div>
+              <p>Fresh From Oven</p>
+              <small>Setiap Pukul 06.00 WIB</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KEUNGGULAN SECTION ================= -->
+    <section class="features section" id="keunggulan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Kenapa Memilih Kami</span>
+          <h2 class="section-title">Kelezatan Nyata di Setiap Gigitan</h2>
+          <p class="section-desc">Kami menjaga standar mutu tinggi agar setiap potong roti selalu higienis dan nikmat.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Dipanggang Hari Ini</h3>
+            <p>Kami tidak pernah menjual roti sisa kemarin. Semua yang kamu terima selalu fresh from the oven.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+            <h3>Bahan Berkualitas</h3>
+            <p>Menggunakan tepung protein tinggi, susu murni, dan butter pilihan tanpa pewarna buatan.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h3>Bebas Pengawet</h3>
+            <p>Sehat dan aman dikonsumsi seluruh anggota keluarga, mulai dari balita hingga lansia.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3>Pesan Cepat via WA</h3>
+            <p>Pilih roti di website, checkout langsung terhubung ke WhatsApp toko kami tanpa ribet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU ROTI SECTION ================= -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Daftar Pilihan Roti</span>
+          <h2 class="section-title">Menu Favorit RotiKoe</h2>
+          <p class="section-desc">Pilih kategori kesukaanmu dan tambahkan langsung ke keranjang belanja.</p>
+        </div>
+
+        <!-- Filter Kategori Tombol Interaktif -->
+        <div class="category-filters" id="categoryFilters">
+          <button class="filter-btn active" data-category="semua">Semua Menu</button>
+          <button class="filter-btn" data-category="manis">Roti Manis</button>
+          <button class="filter-btn" data-category="sobek">Roti Sobek</button>
+          <button class="filter-btn" data-category="pastry">Pastry & Croissant</button>
+          <button class="filter-btn" data-category="sehat">Roti Sehat</button>
+        </div>
+
+        <!-- Wadah Kartu Menu (Roti) -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Item Roti akan dirender secara dinamis oleh script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TENTANG KAMI SECTION ================= -->
+    <section class="about section" id="tentang">
+      <div class="container about-container">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" 
+               alt="Dapur RotiKoe">
+          <div class="about-card-badge">
+            <i class="fa-solid fa-heart"></i>
+            <span>Dibuat dengan cinta & keahlian sejak 2021</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-subtitle">Kisah Kami</span>
+          <h2 class="section-title">Berawal dari Dapur Rumah, Kini Hadir untuk Kebahagiaan Anda</h2>
+          <p>
+            RotiKoe lahir dari kecintaan kami terhadap aroma roti yang baru matang. Berawal dari resep keluarga turun-temurun, kami ingin menyajikan roti yang tidak hanya lembut di mulut, tapi juga sehat bagi tubuh.
+          </p>
+          <p>
+            Setiap adonan difermentasi dengan waktu yang pas, menghasilkan serat roti halus seperti kapas dengan rasa mentega yang harum alami.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Higienis & Bersertifikat Halal</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Kemasan Ramah Lingkungan</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Menerima Pesanan Partai / Acara</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONI SECTION ================= -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Apa Kata Mereka</span>
+          <h2 class="section-title">Cerita Pecinta RotiKoe</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Roti sobek cokelatnya beneran lumer parah! Lembut banget bahkan setelah disimpan 2 hari di suhu ruang."</p>
+            <div class="user-info">
+              <div class="user-avatar">AD</div>
+              <div>
+                <h4>Annisa D.</h4>
+                <small>Ibu Rumah Tangga</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Croissant butter-nya renyah di luar, empuk berlayer di dalam. Pas banget buat teman kopi pagi hari."</p>
+            <div class="user-info">
+              <div class="user-avatar">BP</div>
+              <div>
+                <h4>Budi Pratama</h4>
+                <small>Karyawan Swasta</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Pesan 50 boks buat acara arisan keluarga, semua tamu memuji rasanya. Pengiriman juga tepat waktu!"</p>
+            <div class="user-info">
+              <div class="user-avatar">SW</div>
+              <div>
+                <h4>Siti Wulandari</h4>
+                <small>Wiraswasta</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KONTAK & LOKASI SECTION ================= -->
+    <section class="contact section" id="kontak">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info">
+            <span class="section-subtitle">Kunjungi Kami</span>
+            <h2>Ingin Bertanya atau Pesan Khusus?</h2>
+            <p>Hubungi kami atau mampir langsung ke gerai toko roti kami untuk merasakan semerbak wanginya panggangan roti.</p>
+
+            <ul class="contact-details">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jl. Cendrawasih No. 45, Kota Bahagia, Indonesia</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+62 812-3456-7890</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <span>Setiap Hari: 06.30 - 20.30 WIB</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-action">
+            <h3>Pesan Cepat Lewat WhatsApp</h3>
+            <p>Punya permintaan kustom atau mau pesan snack box? Konsultasikan langsung bersama tim kami.</p>
+            <a href="https://wa.me/6281234567890?text=Halo%20RotiKoe,%20saya%20ingin%20tanya-tanya%20seputar%20pemesanan%20roti." 
+               target="_blank" 
+               class="btn btn-primary btn-block">
+              <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#beranda" class="logo">
+          <i class="fa-solid fa-bread-slice logo-icon"></i>
+          <span>Roti<span>Koe</span></span>
+        </a>
+        <p>Menghadirkan kelezatan roti rumahan hangat dengan standar bahan terbaik untuk hari-hari manismu.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#menu">Menu Roti</a></li>
+          <li><a href="#keunggulan">Keunggulan</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Ikuti Media Sosial</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 RotiKoe Bakery. Dibuat dengan cinta untuk Tugas Web PPLG.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL / DRAWER KERANJANG BELANJA ================= -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-header">
+        <div class="cart-header-title">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <h3>Keranjang Belanja</h3>
+        </div>
+        <button class="close-cart-btn" id="closeCartBtn" aria-label="Tutup Keranjang">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Daftar item pesanan -->
+      <div class="cart-items" id="cartItemsList">
+        <!-- Akan dirender oleh JS jika keranjang kosong / ada isi -->
+      </div>
+
+      <!-- Ringkasan dan Checkout -->
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Total Pembayaran:</span>
+          <span class="cart-total-price" id="cartTotalPrice">Rp 0</span>
+        </div>
+        <p class="cart-note">*Pesanan akan diteruskan langsung ke WhatsApp Admin toko.</p>
+        <button class="btn btn-primary btn-block" id="checkoutBtn">
+          <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFIKASI ================= -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Roti berhasil ditambahkan ke keranjang!</span>
+  </div>
+
+  <!-- File JavaScript Eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
+
